@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*font-family: Poppins,sas-serif,*/
+/*
+.color1 { #0490fb };
+.color2 { #33d0fc };
+.color3 { #0431c9 };
+.color4 { #025696 };
+.color5 { #027696 };
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  background-color: #2C3E50 ;
+  
+}
+
+header {
+    min-height: 100vh;
+}
+img {
+    max-width: 100%;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+ 
+}
+.logo {
+    max-width: 50px;
+}
+.navbar ul {
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul li {
+        padding: 0 20px;
+        font-size: 20px;
+}
+
+.navbar ul li a {
+  color: #FFFF;
+}
+/*Efecto de cambio de color de navbar*/ 
+.navbar ul li a:hover {
+    color: #f2643d;
+}
+
+#menu {
+    display: none;
+}
+.menu-icon{
+    width: 25px;
+}
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+.header-content {
+    display: flex;
+    margin-top: 150px;
+}
+.header-txt h1{
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ font-size: 40px;
+ font-weight: bold;
+ line-height: 1;
+ color: #ffffff;
+ margin-bottom: 15px;
+}
+.header-txt p{
+ font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ font-size: 20px;
+ font-weight: bold;
+ line-height: 1;
+ color: #f4f4f4;
+ margin-bottom: 50px;
+}
+/*Empresas Slider   */
+.empresas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-wrapper {
+  
+    max-width: 1100px;
+    margin: 0 60px 35px;   
+  
+    padding: 20px 10px;
+    overflow: hidden;
+}
+
+
+.card-list .card-item .card-link {
+    width: 250px;
+    user-select: none;
+    display: block;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 12px;
+    border:2px solid transparent;
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.0.5);
+    transition: 0.2s ease;    
+}
+.card-list .card-item .card-link {
+    cursor: grabbing;
+}
+
+
+
+
+.card-list .card-item .card-link:hover{
+    border-color: #2ecc71;
+}
+
+.card-list .card-item .card-img {
+    width: 100%;
+    object-fit: cover;
+   
+    border-radius: 10px;
+   
+}
+ /* BOTON DE FLECHA */
+
+.card-list .card-link .card-button {
+    height: 35px;
+    width: 35px;
+    border-color: #E74C3C;
+    color: #e74c3c;
+    border-radius: 50%;
+    margin: 30px 0 5px;
+    background: none;
+    border: 2px solid salmon;
+    cursor: pointer;
+    transform: rotate(-45deg);
+    transition: 0.4s ease;
+}
+
+.card-list .card-link:hover .card-button{
+    background-color: #2ecc71;
+    color: #ffffff;
+    
+}
+
+
+
+.card-wrapper .swiper-pagination-bullet {
+
+    height: 13px;
+    width: 13px;
+    opacity: 0,5;
+    background: blue;
+
+}
+
+.card-wrapper .swiper-pagination-bullet-active {
+    opacity: 1;
+    
+}
+
+.card-wrapper .swiper-slide-button {
+    color: blue;
+    margin-top: -35px;   
+}
+
+
+footer {
+    background-color:#34495E;
+    color: #ffffff;
+    padding: 40px 0;
+
+    
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 30px;
+}
+
+.footer-section {
+    flex: 1 1 250px;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section li {
+    margin-bottom: 5px;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 20px;
+}
+
+.footer-bottom {
+ 
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #555;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 991px)  {
+
+.menu {
+    padding: 20px;
+    position: relative;
+}
+.menu label {
+    display: initial;
+}
+
+/* MENU HAMBURGUESA*/
+.menu .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color:#34495E;
+    display: none;
+}    
+
+.menu .navbar ul {
+    flex-direction: column;
+   
+    padding: 0 20px;  
+}
+.menu .navbar ul li {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* CAMBIO DE COLOR NAVBAR */
+
+.menu .navbar ul li a:hover {
+    color: blue;
+}
+
+#menu:checked~ .navbar{
+    display: initial;
+}
+
+.header-content {
+    padding: 30px;
+    margin-top: 0;
+    flex-direction: column;
+    text-align: center;
+}
+.header-txt {
+    padding: 0 0 40px 0;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+}
+
+@media screen and (max-width:768px) {
+    .menu {
+        padding: 15px;
+    }
+    
+    .card-wrapper {
+        margin: 0 10px 25px;
+
+
+    }
+
+    .card-wrapper .swiper-slide-button {
+    display:none;
+}
+
+    .footer-section {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+}
+
+
